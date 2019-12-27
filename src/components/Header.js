@@ -10,16 +10,40 @@ export default () => {
       <h1 className={classes.title}>Gatsby</h1>
       <ul className={classes.menu}>
         <li>
-          <Link to="/home">Home</Link>
+          <Link
+            className={classes.navItem}
+            activeClassName={classes.navItemActive}
+            to="/"
+          >
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/blog">Blog</Link>
+          <Link
+            className={classes.navItem}
+            activeClassName={classes.navItemActive}
+            to="/blog"
+          >
+            Blog
+          </Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link
+            className={classes.navItem}
+            activeClassName={classes.navItemActive}
+            to="/about"
+          >
+            About
+          </Link>
         </li>
         <li>
-          <Link to="/contact">Contact </Link>
+          <Link
+            className={classes.navItem}
+            activeClassName={classes.navItemActive}
+            to="/contact"
+          >
+            Contact{' '}
+          </Link>
         </li>
       </ul>
     </div>

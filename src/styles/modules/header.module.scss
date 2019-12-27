@@ -2,13 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 0rem 2rem;
   background: #516cf0;
 }
 
 .title {
   margin: 0;
-  font-size: 1.75rem;
+  font-size: 18px;
   color: #ffffff;
 }
 
@@ -22,12 +22,17 @@
       margin-right: 0;
     }
   }
+}
 
-  a {
-    color: #ffffff;
+.nav-item {
+  font-size: 14px;
+  color: #ffffff;
 
-    &:hover {
-      color: palevioletred;
-    }
+  &:hover {
+    color: #516cf0;
   }
+}
+
+.nav-item--active {
+  color: #8fa0f5;
 }
