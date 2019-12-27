@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #516cf0;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.75rem;
+  color: #ffffff;
+}
+
+.menu {
+  display: flex;
+
+  li {
+    margin-right: 0.5rem;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    color: #ffffff;
+
+    &:hover {
+      color: palevioletred;
+    }
+  }
+}
