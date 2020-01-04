@@ -1,38 +1,50 @@
+@import '../mixins/media-queries';
+@import '../var/var';
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0rem 2rem;
-  background: #516cf0;
 }
 
 .title {
-  margin: 0;
-  font-size: 18px;
-  color: #ffffff;
+  font-family: $gelasio;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #324238;
 }
 
 .menu {
+  margin: 0 auto;
+  padding: 0;
   display: flex;
 
   li {
-    margin-right: 0.5rem;
+    margin-right: $medium;
 
     &:last-of-type {
       margin-right: 0;
     }
+
+    @include desktop {
+      margin-right: $default;
+    }
+  }
+
+  @include tablet-portrait {
+    margin: 0;
   }
 }
 
 .nav-item {
-  font-size: 14px;
-  color: #ffffff;
+  font-size: 1rem;
+  color: $light-grey;
 
   &:hover {
-    color: #516cf0;
+    color: $accent;
   }
 }
 
 .nav-item--active {
-  color: #8fa0f5;
+  color: #324238;
 }

@@ -7,7 +7,9 @@ import classes from '../styles/modules/header.module.scss';
 export default () => {
   return (
     <div className={classes.header}>
-      <h1 className={classes.title}>Gatsby</h1>
+      <div>
+        <span className={classes.title}>Wastless</span>
+      </div>
       <ul className={classes.menu}>
         <li>
           <Link

@@ -1,15 +1,22 @@
+@import '../var/var';
+@import '../mixins/media-queries';
+
 .container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: #f3f3f3;
+  padding: $default;
+  background: $white-ish;
+
+  @include tablet-landscape {
+    padding: $large;
+  }
 }
 
 .content {
   flex-grow: 1;
   margin: 0 auto;
-  padding: 1rem;
-  min-width: 500px;
   max-width: 750px;
+  padding: $default;
   background: #ffffff;
 }
