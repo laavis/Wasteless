@@ -6,7 +6,7 @@ import classes from '../styles/modules/header.module.scss';
 
 export default () => {
   return (
-    <div className={classes.header}>
+    <header className={classes.header}>
       <div>
         <span className={classes.title}>Wastless</span>
       </div>
@@ -48,6 +48,6 @@ export default () => {
           </Link>
         </li>
       </ul>
-    </div>
+    </header>
   );
 };

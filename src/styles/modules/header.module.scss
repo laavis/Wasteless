@@ -5,11 +5,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  grid-area: header;
+
+  @include tablet-landscape {
+    margin-top: 100px;
+    margin-bottom: 60px;
+  }
 }
 
 .title {
-  font-family: $gelasio;
-  font-size: 20px;
+  font-family: $emphasis;
+  font-size: 22px;
+  font-weight: $light;
   letter-spacing: 1px;
   color: #324238;
 }

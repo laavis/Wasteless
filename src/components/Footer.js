@@ -2,8 +2,8 @@ import React from 'react';
 
 export default () => {
   return (
-    <div>
+    <footer>
       <p>2020 © Sara Suviranta</p>
-    </div>
+    </footer>
   );
 };

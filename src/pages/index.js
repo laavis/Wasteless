@@ -6,11 +6,11 @@ import Layout from '../components/Layout';
 const Index = () => {
   return (
     <Layout>
-      <h1>Hello</h1>
-      <h3>I like big dicks</h3>
+      <h1>Zero Taste</h1>
+      <h3>Zero waste wupwup</h3>
       <p>
         Need help?
-        <Link to="/contact">Contact me uwu</Link>
+        <Link to="/contact">Contact me</Link>
       </p>
     </Layout>
   );

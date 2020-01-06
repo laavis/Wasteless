@@ -3,20 +3,27 @@
 
 .container {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  padding: $default;
-  background: $white-ish;
+  display: grid;
+  padding: 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  grid-template-rows: min-content 1fr min-content;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
 
   @include tablet-landscape {
-    padding: $large;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-areas:
+      'header header header header'
+      'main main main main'
+      '. footer footer .';
   }
 }
 
 .content {
-  flex-grow: 1;
-  margin: 0 auto;
-  max-width: 750px;
-  padding: $default;
   background: #ffffff;
+  grid-area: main;
 }

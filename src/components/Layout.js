@@ -10,7 +10,7 @@ export default props => {
   return (
     <div className={classes.container}>
       <Header />
-      <div className={classes.content}>{props.children}</div>
+      <main className={classes.content}>{props.children}</main>
       <Footer />
     </div>
   );
