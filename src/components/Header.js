@@ -1,14 +1,23 @@
 import React from 'react';
-
-import { Link } from 'gatsby';
+import { Link, graphql, useStaticQuery } from 'gatsby';
 
 import classes from '../styles/modules/header.module.scss';
 
 export default () => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `);
+
   return (
     <header className={classes.header}>
       <div>
-        <span className={classes.title}>Wastless</span>
+        <span className={classes.title}>{data.site.siteMetadata.title}</span>
       </div>
       <ul className={classes.menu}>
         <li>
