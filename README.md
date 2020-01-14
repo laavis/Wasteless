@@ -5,11 +5,12 @@
   </a>
 </p>
 <h1 align="center">
-  Wastless | Gatsby + Wordpress
+  Wastless 
 </h1>
 
 Personal project
 
 ## Design
-  **Landing**
+
+**Landing**
 <img alt="Landing" src="https://i.imgur.com/fhuEQme.png"  />
