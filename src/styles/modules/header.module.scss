@@ -21,31 +21,45 @@
   color: #324238;
 }
 
+.menu-button {
+  display: inline-flex;
+}
+
+.menu-icon {
+  line {
+    stroke-width: 2;
+    stroke: black;
+  }
+}
+
+.menu-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $accent;
+}
+
 .menu {
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   padding: 0;
-  display: none;
+  text-align: center;
 
   li {
-    margin-right: $medium;
-
-    &:last-of-type {
-      margin-right: 0;
-    }
-
-    @include desktop {
-      margin-right: $default;
-    }
-  }
-
-  @include tablet-portrait {
-    margin: 0;
+    margin-bottom: 1rem;
   }
 }
 
 .nav-item {
-  font-size: 1rem;
-  color: $light-grey;
+  font-size: 2rem;
+  font-family: $emphasis;
+  font-weight: $light;
+  color: $white;
 
   &:hover {
     color: $accent;
@@ -53,5 +67,5 @@
 }
 
 .nav-item--active {
-  color: #324238;
+  color: pink;
 }
