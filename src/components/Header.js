@@ -28,7 +28,9 @@ export default () => {
   return (
     <header className={classes.header}>
       <div>
-        <span className={classes.title}>{data.site.siteMetadata.title}</span>
+        <Link to="/" className={classes.title}>
+          {data.site.siteMetadata.title}
+        </Link>
       </div>
       <div
         className={`${globalClasses.iconWrapper} ${globalClasses.btn}`}

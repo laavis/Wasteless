@@ -35,7 +35,7 @@ export default ({ data }) => {
           <Img fluid={data.pic1.childImageSharp.fluid} />
         </div>
         <div className={`${classes.item} ${classes.textItem}`}>
-          <h2>Zero Waste living yee</h2>
+          <h2>Zero Waste Living</h2>
           <p>
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex ea commodo consequat.{' '}
@@ -48,11 +48,11 @@ export default ({ data }) => {
           </p>
 
           <div>
-            <Link>Read More</Link>
+            <p>Read More</p>
           </div>
         </div>
         <div className={`${classes.item} ${classes.textItem}`}>
-          <h2>Zero Waste living yee</h2>
+          <h2>Zero Waste Living</h2>
           <p>
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex ea commodo consequat.{' '}
@@ -64,7 +64,7 @@ export default ({ data }) => {
             anim id est laborum.
           </p>
           <div>
-            <Link>Read More</Link>
+            <p>Read More</p>
           </div>
         </div>
         <div
