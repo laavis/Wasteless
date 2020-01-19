@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/wasteless',
   siteMetadata: {
     title: 'Wasteless',
     author: 'Sara Suviranta',
