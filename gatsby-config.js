@@ -6,6 +6,8 @@ module.exports = {
   plugins: [
     'gatsby-plugin-sass',
     'gatsby-transformer-remark',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-source-contentful',
       options: {
@@ -18,6 +20,13 @@ module.exports = {
       options: {
         name: 'src',
         path: `${__dirname}/src/`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'img',
+        path: `${__dirname}/src/img`,
       },
     },
   ],

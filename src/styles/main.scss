@@ -25,6 +25,13 @@ li {
   text-decoration: none;
 }
 
+h2 {
+  font-family: $emphasis;
+  font-weight: 400;
+  font-size: 24px;
+  color: $accent;
+}
+
 li,
 ul {
   list-style: none;
@@ -32,4 +39,8 @@ ul {
 
 footer {
   grid-area: footer;
+}
+
+svg {
+  stroke-width: 2;
 }

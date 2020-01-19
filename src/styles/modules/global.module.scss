@@ -1,0 +1,20 @@
+.icon-wrapper {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  &.btn {
+    cursor: pointer;
+  }
+}
+
+.icon-light {
+  stroke-width: 2;
+  stroke: white;
+}
+.icon-dark {
+  stroke-width: 2;
+  stroke: black;
+}
