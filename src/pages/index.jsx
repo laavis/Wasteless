@@ -35,9 +35,7 @@ export default ({ data }) => {
         <div
           className={`${classes.imgContainer} ${classes.left} ${classes.item}`}
         >
-          <div className={globalClasses.imgWrapper}>
-            <Img fluid={data.pic1.childImageSharp.fluid} />
-          </div>
+          <Img fluid={data.pic1.childImageSharp.fluid} />
         </div>
         <div className={`${classes.item} ${classes.textItem}`}>
           <h2 className={`${classes.sectionTitle} ${classes.name}`}>
@@ -72,9 +70,7 @@ export default ({ data }) => {
         <div
           className={`${classes.imgContainer} ${classes.right} ${classes.imgOffset} ${classes.item}`}
         >
-          <div className={globalClasses.imgWrapper}>
-            <Img fluid={data.pic2.childImageSharp.fluid} />
-          </div>
+          <Img fluid={data.pic2.childImageSharp.fluid} />
         </div>
       </div>
     </Layout>
