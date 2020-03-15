@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: '/Wasteless/',
   siteMetadata: {
-    title: 'Wasteless',
+    title: 'Plants in Pots',
     author: 'Sara Suviranta',
   },
   plugins: [

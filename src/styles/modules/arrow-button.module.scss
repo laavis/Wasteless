@@ -1,0 +1,32 @@
+@import '../var/var';
+
+.link {
+  width: fit-content;
+  align-self: flex-end;
+  font-family: $emphasis;
+  font-size: 16px;
+  color: $accent;
+  position: relative;
+  margin-top: 2rem;
+
+  &::after {
+    content: '';
+    width: 70%;
+    height: 10px;
+    display: inline-block;
+    background: $greenie;
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    z-index: -1;
+  }
+}
+
+.arrow {
+  width: 22px;
+  height: 8px;
+  margin-left: 1rem;
+  background-image: url('../../img/ic_arrow_r.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}

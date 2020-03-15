@@ -1,0 +1,162 @@
+@import '../var/var';
+@import '../mixins/media-queries';
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+}
+
+.section {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include tablet-landscape {
+    flex-direction: row;
+  }
+}
+
+section {
+  display: flex;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  z-index: 1;
+
+  @include tablet-landscape {
+    margin-bottom: 4rem;
+
+    &:nth-child(2n),
+    &:nth-child(2n + 1) {
+      width: 60%;
+    }
+
+    &:nth-child(4n),
+    &:nth-child(4n + 1) {
+      width: 40%;
+    }
+  }
+}
+
+.text-item {
+  @include tablet-landscape {
+    padding: 1rem 4rem 1rem 4rem;
+  }
+}
+
+.img-wrapper {
+  margin: 48px 35% 120px 35%;
+  position: relative;
+  z-index: 2;
+
+  // Targets wrapper div created by gatsby-image in case of wondering~
+  div {
+    overflow: hidden;
+    border-radius: 4px;
+  }
+}
+
+.img-container {
+  position: relative;
+  border-radius: 4px;
+  /*box-shadow: 0 40px 70px -12px rgba(67, 91, 81, 0.3),
+    0 16px 28px -18px rgba(0, 0, 0, 0.3), 0 -10px 28px -8px rgba(0, 0, 0, 0.025);
+
+  &:first-of-type {
+    box-shadow: 0 40px 70px -12px rgba(0, 0, 0, 0.1),
+      0 16px 28px -18px rgba(0, 0, 0, 0.15),
+      0 -10px 28px -8px rgba(0, 0, 0, 0.05);
+  }*/
+
+  &.left::after {
+    content: '';
+    width: 50px;
+    height: 60%;
+    position: absolute;
+    top: 15%;
+    z-index: -1;
+    display: block;
+    background: #c6dace;
+    transform: translateX(-40px);
+    box-shadow: -6px 6px 21px 6px rgba(159, 171, 168, 0.25),
+      -3px 3px 3px -4px rgba(46, 70, 56, 0.2);
+  }
+
+  &.right::after {
+    content: '';
+    width: 70px;
+    height: 80%;
+    position: absolute;
+    top: 15%;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background: #627268;
+    transform: translateX(20px);
+  }
+}
+
+.img-offset {
+  @include tablet-landscape {
+    transform: translateY(-100px);
+  }
+}
+
+.title-wrapper {
+  position: relative;
+  width: fit-content;
+
+  h2 {
+    position: relative;
+    margin-bottom: 0.8rem;
+    z-index: 10;
+
+    &::before {
+      content: '';
+      width: 60%;
+      height: 10px;
+      display: inline-block;
+      background: $greenie;
+      position: absolute;
+      bottom: -1px;
+      z-index: -1;
+      left: -6px;
+    }
+  }
+}
+
+.section-title {
+  position: relative;
+  width: fit-content;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    width: 60%;
+    height: 10px;
+    display: inline-block;
+    background: $greenie;
+    position: absolute;
+    bottom: -1px;
+    z-index: -1;
+    left: -6px;
+  }
+}
+
+.highlight {
+  position: absolute;
+  bottom: -2px;
+  left: -6px;
+  width: 60%;
+  height: 10px;
+  background: $greenie;
+}
+
+.arrow-btn-left {
+  align-self: flex-start;
+}

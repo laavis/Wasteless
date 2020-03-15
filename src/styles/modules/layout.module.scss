@@ -28,6 +28,7 @@
   background: #ffffff;
   grid-area: main;
   margin-top: 2rem;
+  position: relative;
 
   @include tablet-landscape {
     padding-top: 0;
