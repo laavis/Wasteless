@@ -53,6 +53,11 @@ section {
   position: relative;
   border-radius: 4px;
 
+  div {
+    overflow: hidden;
+    border-radius: 4px;
+  }
+
   &.left::after {
     content: '';
     width: 50px;
