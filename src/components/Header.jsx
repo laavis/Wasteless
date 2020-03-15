@@ -9,8 +9,6 @@ import classes from '../styles/modules/header.module.scss';
 export default () => {
   const [menuOpen, setMenuOpen] = React.useState(false);
 
-  console.log('aaa');
-
   const data = useStaticQuery(graphql`
     query {
       site {
